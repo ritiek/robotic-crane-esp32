@@ -1,14 +1,21 @@
 # robotic-crane-esp32
 
-## Arduino IDE (Windows)
+Control a robotic crane arm with 4 degree of freedom through micro servo motors. Such as this product:
+https://www.amazon.in/DOF-servo-Controlled-Robotic-Gripper/dp/B07R6SWCM7
 
-### Install CP210x USB to UART Bridge VCP Drivers
+## Installation
+
+See the Arduino IDE section for Windows or the PlatformIO section for Linux.
+
+### Arduino IDE (Windows)
+
+#### Install CP210x USB to UART Bridge VCP Drivers
 
 1. Go to https://silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads.
 2. Download "CP210x VCP Windows".
 3. Install the downloaded drivers.
 
-### Setup Arduino IDE
+#### Setup Arduino IDE
 
 Download and install Arduino IDE and also download and extract the zip of this repository.
 
@@ -23,7 +30,7 @@ Assuming you have ESP32 Dev Module, perform the following steps:
 7. Now go to Sketch -> Upload. Once it's done compiling, it'll show the "Connecting..." message. When it does so, press and hold the IO0 (or the BOOT) button for 1s and then release it.
 8. It should now correctly upload the sketch onto your ESP32 board.
 
-## PlatformIO (Linux)
+### PlatformIO (Linux)
 
 Assuming the board is connected to `/dev/ttyUSB0`, run:
 
