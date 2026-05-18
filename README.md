@@ -3,7 +3,29 @@
 Control a robotic crane arm with 4 degree of freedom through micro servo motors. Such as this product:
 https://www.amazon.in/DOF-servo-Controlled-Robotic-Gripper/dp/B07R6SWCM7
 
-## Installation
+## Hardware
+
+### Requirements
+
+1. Robotic crane hardware.
+2. ESP32 or other microcontroller (we'll assume ESP32 here).
+3. 5v power source, capable of providing 2A or more current.
+4. Couple of jumper cables.
+5. A breadboard.
+6. Windows or a Linux machine.
+
+<img src="http://i.imgur.com/Ktx7mkr.jpeg" width="600">
+
+### Wiring
+
+1. Connect the PWM signal jumpers from all the four micro servo motors to appropriate pins on ESP32 as defined in
+[robotic-crane/robotic-crane.ino](https://github.com/ritiek/robotic-crane-esp32/blob/main/robotic-crane/robotic-crane.ino#L3-L6).
+2. Connect the other two pins of all the micro servo motors to +5V and GND using an external power source by making parallel connections on the breadboard.
+
+<img src="http://i.imgur.com/L4ESPoJ.jpeg" width="600">
+<img src="http://i.imgur.com/6qC5kG1.jpeg" width="450">
+
+## Software
 
 See the Arduino IDE section for Windows or the PlatformIO section for Linux.
 
